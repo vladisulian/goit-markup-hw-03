@@ -126,10 +126,11 @@ ul {
 /* common styles end */
 
 /* index html styles */
-
+.header {
+  height: 80px;
+}
 .header_bg {
   background-color: var(--white);
-  height: 80px;
 }
 .Web {
   font-family: 'Raleway';
