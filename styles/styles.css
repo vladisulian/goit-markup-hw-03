@@ -100,28 +100,6 @@ ul {
   box-shadow: 0 0 0 1.5px var(--focus_bg_col);
 }
 
-.btn {
-  
-  width: 200px;
-  height: 50px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-
-  font-family: 'Roboto';
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-
-  color: var(--btn_txt_cl);
-  background-color: var(--btn_bg_cl);
-
-  cursor: pointer;
-}
-
 /* common styles end */
 /* common styles end */
 
@@ -175,7 +153,6 @@ ul {
   height: 120px;
   padding-top: 200px;
   padding-left: 452px;
- 
 
   font-weight: 900;
   font-size: 44px;
@@ -186,7 +163,7 @@ ul {
 
   color: var(--white);
 }
-.main_btn {
+.main_btn_unknown_class {
   /* text */
 
   font-weight: 700;
@@ -205,6 +182,30 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: var(--blue);
+}
+.btn_container{
+padding-top: 30px;
+padding-left: 700px;
+}
+.btn {
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--btn_txt_cl);
+  background-color: var(--btn_bg_cl);
+
+  cursor: pointer;
 }
 
 .main_trait_text {
