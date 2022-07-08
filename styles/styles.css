@@ -1,6 +1,9 @@
 ul[class] {
   padding: 0;
 }
+img {
+  display: block;
+}
 
 :root {
   --accent_col: #2196f3;
@@ -33,9 +36,12 @@ ul[class] {
   display: flex;
   align-items: center;
 }
+.ot_container {
+  padding: 30px;
+}
 .section {
   padding-top: 94px;
-  padding-bottom: 94px2;
+  padding-bottom: 94px;
 }
 
 .visually-hidden {
@@ -109,7 +115,6 @@ ul {
   letter-spacing: 0.06em;
   border-radius: 4px;
   border: none;
-  
 
   color: var(--btn_txt_cl);
   background-color: var(--btn_bg_cl);
@@ -117,18 +122,14 @@ ul {
   cursor: pointer;
 }
 
-/* common styles */
-/* common styles */
+/* common styles end */
+/* common styles end */
 
 /* index html styles */
 
 .header_bg {
   background-color: var(--white);
-  position: absolute;
-  width: 1600px;
   height: 80px;
-  left: 0px;
-  top: 0px;
 }
 .Web {
   font-family: 'Raleway';
@@ -150,16 +151,22 @@ ul {
 }
 .header_list {
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header_item {
   flex: content;
+  justify-content: space-between;
 }
 .header_text {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+
+  display: block;
+  padding-top: 32px;
 
   color: var(--text_col);
 }
@@ -175,10 +182,7 @@ ul {
   color: var(--contacts_col);
 }
 
-/* Main */
-
 .main_bg {
-  width: 1600px;
   height: 600px;
   background-color: var(--main_bg_col);
 }
@@ -219,8 +223,6 @@ ul {
   background-color: var(--blue);
 }
 
-/* traits section */
-
 .main_trait_text {
   font-weight: 700;
   font-size: 14px;
@@ -233,20 +235,12 @@ ul {
   color: var(--undertittle_col);
 }
 
-/* what are we doing section */
-
 .wawd_section_tittle {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
 }
-/*  */
-/*  */
-/*  */
-/*  */
-
-/* our team section */
 
 .our_team_sect {
   background-color: var(--our_team_bg_col);
@@ -293,8 +287,6 @@ ul {
 
 /* portfolio.html styles */
 
-/* main, button sect */
-
 .btn_filter {
   font-family: 'Roboto';
   font-weight: 500;
@@ -319,7 +311,6 @@ ul {
   background-color: var(--btn_bg_cl);
 }
 
-/* img sect */
 .img_text {
   font-weight: 700;
   font-size: 18px;
