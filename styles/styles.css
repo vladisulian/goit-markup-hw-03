@@ -61,10 +61,8 @@ ul {
 
 .container {
   width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 .flex_container {
   display: flex;
@@ -78,7 +76,7 @@ ul {
   padding-bottom: 94px;
 }
 
-.header_text:hover,
+.nav_text:hover,
 .contacts:hover,
 .footer_contacts:hover,
 .footer_map:hover {
@@ -91,7 +89,7 @@ ul {
 .btn:focus {
   color: #ffffff;
 }
-.header_text:focus,
+.nav_text:focus,
 .contacts:focus,
 .btn:focus,
 .footer_contacts:focus,
@@ -107,6 +105,8 @@ ul {
   height: 80px;
   background-color: var(--white);
   /* box-sizing: */
+  margin-bottom: 0px;
+  border-bottom: 5px solid var(--header_line_color);
 }
 
 .Web {
@@ -136,11 +136,8 @@ ul {
 .nav_list {
   margin-left: 50px;
 }
-.header {
-  margin-bottom: 0px;
-  border-bottom: 5px solid var(--header_line_color);
-}
-.header_text {
+
+.nav_text {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -153,9 +150,9 @@ ul {
   display: flex;
   flex-direction: row;
 }
-.contacts_li {
+/* .contacts_li {
   margin-left: 50px;
-}
+} */
 .mail_header {
   width: 135px;
   height: 16px;
@@ -165,6 +162,7 @@ ul {
 .phone_header {
   width: 122px;
   height: 16px;
+  margin-top: 32px;
   margin-left: 50px;
   margin-top: 32px;
 }
@@ -245,18 +243,42 @@ ul {
 
   cursor: pointer;
 }
+.traits_container {
+  width: 1170px;
+  height: 101px;
+  margin-top: 94px;
+  margin-right: 215px;
+  margin-bottom: 94px;
+}
+.wawd_list_block {
+  width: 270px;
+  height: 101px;
+  margin-left: 215px;
+  margin-right: 215px;
+  display: flex;
+  /* flex-direction: row; */
+}
+.wawd_list_text {
+  margin-left: 30px;
+}
 
-.main_trait_text {
+.trait_text {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
   text-transform: uppercase;
 }
-.main_trait_downer_text {
+.trait_downer_text {
+  width: 270px;
+  height: 75px;
   line-height: 24px;
 
   color: var(--undertittle_col);
 }
+/* 
+.wawd_container {
+} 
+*/
 
 .wawd_section_tittle {
   font-weight: 700;
