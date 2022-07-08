@@ -128,10 +128,9 @@ ul {
   height: 16px;
 }
 .nav_list_block {
-  margin-left: 93px;
   display: flex;
   flex-direction: row;
-
+  margin-left: 93px;
 }
 .nav_list {
   margin-left: 50px;
@@ -144,6 +143,24 @@ ul {
   letter-spacing: 0.02em;
 
   color: var(--text_col);
+}
+
+.contacts_header_list_block {
+  display: flex;
+  flex-direction: row;
+}
+
+.mail_header {
+  width: 135px;
+  height: 16px;
+  margin-left: 331px;
+  margin-top: 32px;
+}
+.phone_header {
+  width: 122px;
+  height: 16px;
+  margin-left: 50px;
+  margin-top: 32px;
 }
 
 .current {
