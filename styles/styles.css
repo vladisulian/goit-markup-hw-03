@@ -128,10 +128,9 @@ ul {
 /* index html styles */
 .header {
   height: 80px;
-}
-.header_bg {
   background-color: var(--white);
 }
+
 .Web {
   font-family: 'Raleway';
   font-weight: 700;
@@ -139,26 +138,24 @@ ul {
   line-height: calc(31 / 26);
 
   color: var(--blue);
+  display: flex;
 }
 .Studio {
   color: var(--Studio_text);
 }
 .nav {
-  position: absolute;
   width: 294px;
   height: 16px;
-  left: 453px;
-  top: 32px;
+  display: block;
 }
 .header_list {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  /* padding-top: 32px; */
+  /* padding-bottom: 32px; */
 }
 
 .header_item {
   flex: content;
-  justify-content: space-between;
 }
 .header_text {
   font-weight: 500;
