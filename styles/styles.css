@@ -1,7 +1,11 @@
 ul[class] {
-  padding: 0;
+  padding: 0 0 0 0;
 }
 img {
+  display: block;
+}
+a {
+  text-decoration: none;
   display: block;
 }
 
@@ -20,6 +24,22 @@ img {
   --btn_bg_cl: #2196f3;
   --btn_bg_darker_cl: #0a85eb;
   --btn_txt_cl: #ffffff;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--text_col);
+
+  background-color: var(--white);
+}
+address,
+.webstudio {
+  font-style: normal;
+}
+
+ul {
+  list-style: none;
 }
 
 /* common styles */
@@ -58,27 +78,6 @@ img {
   overflow: hidden;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  color: var(--text_col);
-
-  background-color: var(--white);
-}
-
-a {
-  text-decoration: none;
-}
-address,
-.webstudio {
-  font-style: normal;
-}
-
-ul {
-  list-style: none;
-}
-
 .header_text:hover,
 .contacts:hover,
 .footer_contacts:hover,
@@ -102,19 +101,20 @@ ul {
 }
 
 .btn {
+  
   width: 200px;
   height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 
   font-family: 'Roboto';
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
-  display: flex;
+
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  border-radius: 4px;
-  border: none;
 
   color: var(--btn_txt_cl);
   background-color: var(--btn_bg_cl);
@@ -126,6 +126,7 @@ ul {
 /* common styles end */
 
 /* index html styles */
+
 .header {
   height: 80px;
   background-color: var(--white);
@@ -136,35 +137,19 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
+  margin-left: 209px;
 
   color: var(--blue);
-  display: flex;
 }
 .Studio {
   color: var(--Studio_text);
 }
-.nav {
-  width: 294px;
-  height: 16px;
-  display: block;
-}
-.header_list {
-  display: flex;
-  /* padding-top: 32px; */
-  /* padding-bottom: 32px; */
-}
 
-.header_item {
-  flex: content;
-}
 .header_text {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-
-  display: block;
-  padding-top: 32px;
 
   color: var(--text_col);
 }
@@ -185,11 +170,12 @@ ul {
   background-color: var(--main_bg_col);
 }
 .main_text {
-  position: absolute;
+  flex: content;
   width: 696px;
   height: 120px;
-  left: 452px;
-  top: 280px;
+  padding-top: 200px;
+  padding-left: 452px;
+ 
 
   font-weight: 900;
   font-size: 44px;
