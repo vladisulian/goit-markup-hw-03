@@ -27,6 +27,7 @@ a {
   --focus_bg_col: #2196f3;
   --blue: #2196f3;
   --white: #ffffff;
+  --header_line_color: #ececec;
   --contacts_col: #757575;
   --footer_contacts_col: rgba(255, 255, 255, 0.6);
   --Studio_text: #000000;
@@ -135,7 +136,10 @@ ul {
 .nav_list {
   margin-left: 50px;
 }
-
+.header {
+  margin-bottom: 0px;
+  border-bottom: 1px solid var(--header_line_color);
+}
 .header_text {
   font-weight: 500;
   font-size: 14px;
@@ -149,7 +153,9 @@ ul {
   display: flex;
   flex-direction: row;
 }
-
+.contacts_li {
+  margin-left: 50px;
+}
 .mail_header {
   width: 135px;
   height: 16px;
@@ -184,6 +190,7 @@ ul {
   height: 120px;
   padding-top: 200px;
   padding-left: 452px;
+  margin-top: 0px;
 
   font-weight: 900;
   font-size: 44px;
