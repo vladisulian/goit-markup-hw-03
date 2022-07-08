@@ -108,6 +108,7 @@ ul {
 .header {
   height: 80px;
   background-color: var(--white);
+  /* box-sizing: */
 }
 
 .Web {
@@ -115,12 +116,24 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
-  margin-left: 209px;
+  width: 145px;
+  height: 31px;
+  padding-left: 209px;
+  padding-top: 24px;
 
   color: var(--blue);
 }
 .Studio {
   color: var(--Studio_text);
+}
+.nav {
+  width: 294px;
+  height: 16px;
+  flex: content;
+}
+.nav_list {
+  display: flex;
+  margin-left: 93px;
 }
 
 .header_text {
@@ -183,9 +196,9 @@ ul {
   border-radius: 4px;
   background-color: var(--blue);
 }
-.btn_container{
-padding-top: 30px;
-padding-left: 700px;
+.btn_container {
+  padding-top: 30px;
+  padding-left: 700px;
 }
 .btn {
   width: 200px;
