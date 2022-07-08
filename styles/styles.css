@@ -111,12 +111,14 @@ ul {
 }
 
 .Web {
+  width: 145px;
+  height: 31px;
+
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
-  width: 145px;
-  height: 31px;
+
   padding-left: 209px;
   padding-top: 24px;
 
@@ -250,6 +252,8 @@ ul {
   margin-right: 215px;
 }
 .traits_list_block {
+  width: 1170px;
+  height: 101px;
   margin-top: 94px;
   margin-right: 215px;
   margin-bottom: 94px;
@@ -274,19 +278,23 @@ ul {
 .wawd_block {
   width: 1170px;
   height: 386px;
-  margin-left: 215px;
-  margin-right: 215px;
 }
-.wawd_section_tittle {
+.wawd_tittle {
+  width: 376px;
+  height: 42px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
+
   text-align: center;
-  margin-top: 94px;
-  margin-bottom: 50px;
+
+  padding-left: 612px;
 }
 .wawd_list {
   display: flex;
+  margin-top: 50px;
+  margin-left: 0px;
 }
 .wawd_list_pic {
   margin-left: 30px;
@@ -294,6 +302,8 @@ ul {
 
 .our_team_sect {
   background-color: var(--our_team_bg_col);
+  margin-top: 94px;
+  margin-bottom: 0;
 }
 .our_team_text {
   width: 264px;
@@ -348,17 +358,41 @@ ul {
 
 .footer {
   background-color: var(--main_bg_col);
+  /* width: 1600px; */
+  height: 252px;
 }
 .footer_Studio {
+  width: 145px;
+  height: 31px;
+
+ margin-top: 60rem;
+
   color: var(--white);
 }
+.footer_contacts_block {
+  width: 231px;
+  height: 81px;
+
+  padding-left: 215px;
+}
+
 .footer_map {
   line-height: 24px;
+  padding-left: 215px;
+
+  width: 231px;
+  height: 21px;
 
   color: var(--white);
 }
 .footer_contacts {
   line-height: 24px;
+
+  width: 231px;
+  height: 21px;
+
+  padding-left: 215px;
+  padding-top: 9px;
 
   color: var(--footer_contacts_col);
 }
