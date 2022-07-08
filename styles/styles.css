@@ -8,6 +8,19 @@ a {
   text-decoration: none;
   display: block;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 :root {
   --accent_col: #2196f3;
@@ -64,20 +77,6 @@ ul {
   padding-bottom: 94px;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .header_text:hover,
 .contacts:hover,
 .footer_contacts:hover,
@@ -101,8 +100,6 @@ ul {
 }
 
 /* common styles end */
-/* common styles end */
-
 /* index html styles */
 
 .header {
@@ -129,11 +126,15 @@ ul {
 .nav {
   width: 294px;
   height: 16px;
-  flex: content;
+}
+.nav_list_block {
+  margin-left: 93px;
+  display: flex;
+  flex-direction: row;
+
 }
 .nav_list {
-  display: flex;
-  margin-left: 93px;
+  margin-left: 50px;
 }
 
 .header_text {
