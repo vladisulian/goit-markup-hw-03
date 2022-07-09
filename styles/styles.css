@@ -264,7 +264,7 @@ address,
 }
 .trait_downer_text {
   width: 270px;
-  height: 75px;
+  /* height: 75px; */
   line-height: 24px;
 
   color: var(--undertittle_col);
