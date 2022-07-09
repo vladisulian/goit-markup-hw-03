@@ -1,12 +1,11 @@
-ul[class] {
-  padding: 0 0 0 0;
-}
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 a {
   text-decoration: none;
-  display: block;
+  /* display: block; */
 }
 .visually-hidden {
   position: absolute;
@@ -47,13 +46,31 @@ body {
 
   background-color: var(--white);
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
 address,
 .webstudio {
   font-style: normal;
-}
-
-ul {
-  list-style: none;
 }
 
 /* common styles */
@@ -63,7 +80,6 @@ ul {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  border: red;
 }
 .flex_container {
   display: flex;
@@ -104,23 +120,16 @@ ul {
 
 .header {
   height: 80px;
-  background-color: var(--white);
+  /* background-color: var(--white); */
   /* box-sizing: */
-  margin-bottom: 0px;
-  border-bottom: 5px solid var(--header_line_color);
+  border-bottom: 1px solid var(--header_line_color);
 }
 
 .Web {
-  width: 145px;
-  height: 31px;
-
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
-
-  padding-left: 209px;
-  padding-top: 24px;
 
   color: var(--blue);
 }
@@ -128,15 +137,12 @@ ul {
   color: var(--Studio_text);
 }
 .nav {
-  width: 294px;
-  height: 16px;
+  margin-left: 93px;
 }
 .nav_list_block {
   display: flex;
-  flex-direction: row;
-  margin-left: 93px;
 }
-.nav_list {
+.nav_list:not(:first-child) {
   margin-left: 50px;
 }
 .nav_text {
@@ -145,27 +151,21 @@ ul {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 
+  padding: 32px 0;
+  display: block;
+
   color: var(--text_col);
 }
 .contacts_header_list_block {
   display: flex;
-  flex-direction: row;
+  margin-left: auto;
 }
 /* .contacts_li {
   margin-left: 50px;
 } */
-.mail_header {
-  width: 135px;
-  height: 16px;
-  margin-left: 331px;
-  margin-top: 32px;
-}
+
 .phone_header {
-  width: 122px;
-  height: 16px;
-  margin-top: 32px;
   margin-left: 50px;
-  margin-top: 32px;
 }
 
 .current {
@@ -177,19 +177,21 @@ ul {
   letter-spacing: 0.02em;
 
   color: var(--contacts_col);
+  padding: 32px 0;
 }
 
 .main_bg {
-  height: 600px;
+  padding: 200px 0;
+  text-align: center;
+
+  /* text-align   -   выравнивает кнопку по центру, т.к. кнопка - строчный элемент. */
+
   background-color: var(--main_bg_col);
 }
 .main_text {
-  flex: content;
+  /* flex: content; */
   width: 696px;
-  height: 120px;
-  padding-top: 200px;
-  padding-left: 452px;
-  margin-top: 0px;
+  margin: 0 auto;
 
   font-weight: 900;
   font-size: 44px;
@@ -225,8 +227,13 @@ ul {
   padding-left: 700px;
 }
 .btn {
-  width: 200px;
-  height: 50px;
+  min-width: 200px;
+  /* height: 50px; */
+  padding: 10px 32px;
+  margin-top: 30px;
+
+  border: none;
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
@@ -245,21 +252,9 @@ ul {
   cursor: pointer;
 }
 
-.traits_container {
-  width: 1170px;
-  height: 101px;
-  margin-top: 94px;
-  margin-right: 215px;
-}
 .traits_list_block {
-  width: 1170px;
-  height: 101px;
-  margin-top: 94px;
-  margin-right: 215px;
-  margin-bottom: 94px;
-  margin-left: 215px;
   display: flex;
-  flex: content;
+  height: 101px;
 }
 .trait_text {
   font-weight: 700;
@@ -365,7 +360,7 @@ ul {
   width: 145px;
   height: 31px;
 
- margin-top: 60rem;
+  margin-top: 60rem;
 
   color: var(--white);
 }
