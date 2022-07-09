@@ -1,3 +1,6 @@
+/* * {
+  box-sizing: border-box;
+} */
 img {
   display: block;
   max-width: 100%;
@@ -201,30 +204,7 @@ address,
 
   color: var(--white);
 }
-.main_btn_unknown_class {
-  /* text */
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-
-  color: var(--white);
-
-  /* btn bg */
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  background-color: var(--blue);
-}
-.btn_container {
-  padding-top: 30px;
-  padding-left: 700px;
-}
 .btn {
   min-width: 200px;
   /* height: 50px; */
@@ -378,7 +358,24 @@ address,
 
 /* portfolio.html styles */
 
+.filter_section {
+  /* padding: 94px 215px; */
+  padding-top: 94px;
+
+  /* text-align: center; */
+}
+.filter_btn_div {
+  align-items: center;
+}
+.filter_button_block {
+  display: flex;
+  padding-bottom: 34px;
+  /* padding-left: 495px; */
+}
+
 .btn_filter {
+  padding: 6px 22px;
+
   font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
@@ -386,20 +383,26 @@ address,
   text-align: center;
   letter-spacing: 0.03em;
   background: #f5f4fa;
+  border-radius: 10px;
+  border: none;
+
+  /* отступы между кнопками */
+
+  margin-left: 8px;
 
   cursor: pointer;
 }
-.btn_filter:hover {
-  background-color: var(--btn_bg_cl);
-  color: var(--btn_txt_cl);
+
+.filter_img_block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  /* !!flex-basis didn't work!! */
+  flex-basis: calc((100% - 40px) / 3);
+
 }
-.btn_filter:focus {
-  background-color: var(--btn_bg_cl);
-  color: var(--btn_txt_cl);
-}
-.current_btn {
-  color: var(--btn_txt_cl);
-  background-color: var(--btn_bg_cl);
+.filter_img {
+  /* margin-left: 30px; */
 }
 
 .img_text {
@@ -414,4 +417,17 @@ address,
   line-height: calc(30 / 16);
 
   color: var(--undertittle_col);
+}
+
+.btn_filter:hover {
+  background-color: var(--btn_bg_cl);
+  color: var(--btn_txt_cl);
+}
+.btn_filter:focus {
+  background-color: var(--btn_bg_cl);
+  color: var(--btn_txt_cl);
+}
+.current_btn {
+  color: var(--btn_txt_cl);
+  background-color: var(--btn_bg_cl);
 }
