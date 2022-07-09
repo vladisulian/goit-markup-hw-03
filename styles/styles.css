@@ -312,9 +312,6 @@ address,
   display: flex;
   padding-top: 50px;
 }
-/* .our-team_list_block:not(:first-child) {
-  padding-left: 215px;
-} */
 .our_team_pic {
   margin-left: 30px;
   background: #ffffff;
@@ -353,36 +350,28 @@ address,
   font-size: 26px;
   line-height: calc(31 / 26);
 
-  padding-top: 60px;
-  padding-left: 215px;
+  /* padding-top: 60px; */
+  /* padding-left: 215px; */
 
   color: var(--blue);
 }
 .footer_Studio {
-
   color: var(--white);
 }
 .footer_contacts_block {
   padding-top: 20px;
 }
+.footer_contacts_item:not(:first-child) {
+  padding-top: 9px;
+}
 
 .footer_map {
   line-height: 24px;
-  padding-left: 215px;
-
-  width: 231px;
-  height: 21px;
 
   color: var(--white);
 }
 .footer_contacts {
   line-height: 24px;
-
-  width: 231px;
-  height: 21px;
-
-  padding-left: 215px;
-  padding-top: 9px;
 
   color: var(--footer_contacts_col);
 }
