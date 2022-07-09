@@ -120,8 +120,7 @@ address,
 
 .header {
   height: 80px;
-  /* background-color: var(--white); */
-  /* box-sizing: */
+
   border-bottom: 1px solid var(--header_line_color);
 }
 
@@ -343,23 +342,28 @@ address,
 /* footer */
 
 .footer {
-  height: 252px;
+  /* height: 252px; */
+
   background-color: var(--main_bg_col);
-  /* width: 1600px; */
+}
+
+.footer_web {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+
+  padding-top: 60px;
+  padding-left: 215px;
+
+  color: var(--blue);
 }
 .footer_Studio {
-  width: 145px;
-  height: 31px;
-
-  margin-top: 60rem;
 
   color: var(--white);
 }
 .footer_contacts_block {
-  width: 231px;
-  height: 81px;
-
-  padding-left: 215px;
+  padding-top: 20px;
 }
 
 .footer_map {
