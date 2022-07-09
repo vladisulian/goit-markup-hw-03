@@ -364,13 +364,13 @@ address,
 
   /* text-align: center; */
 }
-.filter_btn_div {
-  align-items: center;
-}
+
 .filter_button_block {
   display: flex;
   padding-bottom: 34px;
-  /* padding-left: 495px; */
+
+  /* выравнивание кнопок */
+  justify-content: center;
 }
 
 .btn_filter {
@@ -398,11 +398,13 @@ address,
   flex-wrap: wrap;
   gap: 30px;
   /* !!flex-basis didn't work!! */
-  flex-basis: calc((100% - 40px) / 3);
-
+  /* flex-basis: calc((100% - 40px) / 3); */
 }
+
 .filter_img {
-  /* margin-left: 30px; */
+  /* если добавить border то в сетке будет 2 картинки */
+  /* background: #ffffff;
+  border: 1px solid #eeeeee; */
 }
 
 .img_text {
